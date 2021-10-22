@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> TURNR - Simply small, briliantly big </title>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<script>
+		function myFunction() {
+		var x = document.getElementById("myLinks");
+		if (x.style.display === "block") {
+			x.style.display = "none";
+		} else {
+			x.style.display = "block";
+		}
+		}
+		</script>
+	
+		<div class="topnav">
+			<img class="logo" style="height: 60px" src="logo.png">
+			<a href="index.html" class="active">Home</a>
+			<! navigation links hidden by default>
+			<div id="myLinks">
+				<a href="about.html">About</a>
+				<a href="my skills.html">My Skills</a>
+				<a href="work.html">Work</a>
+				<a href="contact.html">Contact Me</a>
+				<a href="testimonials.html">Testimonials</a>
+			</div>
+			<!--hamburger menu/ bar icon to toggle navigation links-->
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+	<! this is my contact form>
+
+	    		<div class="card" style="background: url(5.png);background-size: cover;background-repeat: no-repeat;background-position: center;"><a name="contact"> </a>
+
+	      <h2 style="color: white;text-align: center;padding: 0px;font-size: 45px"> Contact Me</h2>
+
+	    			<input type="text" placeholder="Name" style="border-width: 1px; border: solid;width: 80%;padding-bottom: 10px;padding-top: 10px;padding-left: 10px;border-radius: 8px;border-color: transparent;">
+
+					<br>
+					<br>
+
+					<input type="mail" placeholder="E-mail" style="border-width: 1px; border: solid;width: 80%;padding-bottom: 10px;padding-top: 10px;padding-left: 10px;border-radius: 8px;border-color: transparent;">
+					
+					<br>
+					<br>
+
+					<input type="text" placeholder="Subject" style="border-width: 1px; border: solid;width: 80%;padding-bottom: 10px;padding-top: 10px;padding-left: 10px;border-radius: 8px;border-color: transparent;">
+					
+					<br>
+					<br>
+					
+					<input type="text" placeholder="Message" style="border-width: 1px; border: solid;width: 80%;padding-bottom: 200px;padding-top: 5px;padding-left: 10px;border-radius: 8px;border-color: transparent;">
+
+					<br>
+					<br>
+
+					<input type="checkbox" name="checkbox" Sign up for newsletter?>
+					<label style="color: white;font-size: 18px"> Subscribe to newsletters </label>
+					<br>
+					<br>
+
+					<button style="padding: 20px; border-width: 0px; border-color: green;border-radius: 10px;background-color: green;color: white;font-family:helvetica;"><strong>Send Message</strong></button>
+				</div>
+				<div class="footer">
+				  <p>Copyright @Turnr [2021]</p>
+				</div>
+</body>
+</html>

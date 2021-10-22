@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 0px;
+  margin: 0px;
+  background: url(4.jpg);
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  background: midnightblue;
+}
+.intro{
+  padding-top: 100px;
+  background-attachment: fixed;
+  background:url(3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  width: 100%;
+
+}
+@media screen and (max-width:400px) {
+  .intro{   
+  min-height: 400px;
+}
+  
+}
+/* Style the headers */
+h1 {
+  font-size: 7vw;
+  font-weight: 600px;
+  font-family: helvetica;
+  color: aliceblue;
+  margin: 20px 0 10px 50px;
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 35px;
+    padding-left: 20px;
+    margin: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .img{
+    width: 50%;
+    padding: 0;
+  }
+  
+}
+h2{
+  font-size: 40px;
+  font-weight: 500px;
+  color: rgb(204,204,227);
+  font-family: tahoma;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(36, 32, 32);
+  position: fixed;
+  width: 100%;
+  padding: 0 60px 0 60px;
+}
+
+/* Style the topnav links */
+.topnav a{
+  float: right;
+  display: block;
+  color: blanchedalmond;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav img {
+  float: left;
+  padding-left: 40px
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(231, 219, 53);
+  color: rgb(14, 14, 14);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 70%;
+  padding: 20px
+}
+
+/* progress bar for my skills*/
+
+.wordpress {
+  width: 90%;
+  height: 4px;
+  background-color: green;
+  color: white;
+}
+
+.front-end {
+  width: 60%;
+  height: 4px;
+  background-color: yellow;
+  color: white;
+}
+
+.coreldraw {
+  width: 95%;
+  height: 4px;
+  background-color: green;
+  color: white;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: whitesmoke;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background:rgb(36, 32, 32);
+  margin-top: 5px;
+  font-size: 25px;
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {    
+    width: auto;
+    font-size: 16px;
+    display: block;
+    font-size: 16px;
+  }
+  .topnav #mylinks {
+    display: none;
+  }
+  .topnav a.icon {
+    background: yellow;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .active {
+    color: white;
+  }
+  .topnav{
+    padding: 0 60px 0 0;
+    margin: 0;
+  }
+}
+
+p {
+  font-size: 16px;
+}

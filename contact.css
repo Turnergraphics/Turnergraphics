@@ -1,0 +1,86 @@
+.card{
+	min-height: 650px;
+	text-align: center;
+	margin: 0px;
+	padding: 10px 40px 10px 40px;
+}
+
+/* Footer */
+.footer {
+  padding: 3px;
+  text-align: center;
+  background:midnightBlue;
+  margin: 0px;
+  font-size: 20px;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(36, 32, 32);
+  position: fixed;
+  width: 100%;
+  padding: 0 60px 0 60px;
+}
+
+/* Style the topnav links */
+.topnav a{
+  float: right;
+  display: block;
+  color: blanchedalmond;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav img {
+  float: left;
+  padding-left: 40px
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(231, 219, 53);
+  color: rgb(14, 14, 14);
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {    
+    width: auto;
+    font-size: 16px;
+    display: block;
+    font-size: 16px;
+  }
+  .topnav #mylinks {
+    display: none;
+  }
+  .topnav a.icon {
+    background: yellow;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .active {
+    color: white;
+  }
+  .topnav{
+    padding: 0 60px 0 0;
+    margin: 0;
+  }
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+@media screen and (max-width: 400px){
+  div{
+    width: auto;
+  }
+  input{
+    width: 50%;
+  }
+  h2{
+    padding-top: 150px;
+  }
+}

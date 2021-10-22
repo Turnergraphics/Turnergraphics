@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script>
+	function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+	}
+	</script>
+	<title> TURNR - Simply small, briliantly big </title>
+
+	<div class="topnav">
+		<img class="logo" style="height: 60px" src="logo.png">
+		<a href="index.html" class="active">Home</a>
+		<! navigation links hidden by default>
+		<div id="myLinks">
+			<a href="about.html">About</a>
+			<a href="my skills.html">My Skills</a>
+			<a href="work.html">Work</a>
+			<a href="contact.html">Contact Me</a>
+			<a href="testimonials.html">Testimonials</a>
+		</div>
+		<!--hamburger menu/ bar icon to toggle navigation links-->
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+</head>
+<body>
+	
+	<div class="intro" style="background-attachment: fixed;">
+		<div>
+		<h1>
+			Hi,<br> I'm Oluwatimilehin.
+		</h1>
+		<h2 style="font-size: 30px;padding-left: 50px;margin: 10px;color: beige;">
+			Web Developer & Graphics Designer.
+		</h2>
+		<a href="contact.html"><button style="border-radius: 10px;background-color: green;width: 200px;height: 50px;text-align: center;margin-left: 100px;margin-top: 50px;border: 0px"><strong>CONTACT ME</button></strong></a>
+		</div>
+	</div>
+	<div class="row" style="padding-left: 10px;padding-right: 10px">
+  		<div class="leftcolumn">
+    		<div class="card">
+     		 <h2> Work</h2>
+    		 <h5>Sample images of previous projects</h5>
+    		 <div class="img" style="text-align: center;">
+    		 	<img style="height: 150px;padding: 10px" src="s1.png">
+    		 	<img style="height: 150px;padding: 10px" src="s2.png">
+    		 	<img style="height: 150px;padding: 10px" src="s3.png">
+    		 </div>
+     		<p>Some text..</p>
+    		<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    		</div>
+    		<div class="card"><a name="myskills"> </a>
+      		<h2> My Skills </h2>
+      		<h5>Title description, Sep 2, 2017</h5>
+    		<p> Wordpress </p>
+      		<p class="wordpress"> . </p>
+      		<p> FrontEnd </p>
+      		<p class="front-end"> . </p>
+      		<p> corelDraw </p>
+      		<p class="coreldraw"> . </p>
+    		</div>
+  		</div>
+  		<div class="rightcolumn">
+	    	<div class="card">
+	      	<h2>About Me</h2>
+	      	<img style="height: 70px" src="me.jpg">
+		    <p>I am Oluwatimilehin.
+		    	I am currently studying Computer Engineering in Oduduwa University Ipetumodu.
+		    	I started graphics design since the year 2016 and I can proudly say that I'm an expert in that field now...
+		    	<a href="#">Read more</a>
+			</p>
+    		</div>
+
+    			<! this is my contact form>
+
+    		<div class="card" style="background: url(2.jpg); margin-left: 0px;background-size: cover;background-repeat: no-repeat;background-position: center;"><a name="contact"> </a>
+
+      <h2 style="color:aliceblue;text-align: left;padding: 0px;"> Contact Me</h2>
+
+    			<input type="text" placeholder="Name" style="border-width: 1px; border: solid;width: 100%;padding-bottom: 10px;padding-top: 10px;padding-left: 10px;border-radius: 8px;border-color: transparent;">
+
+				<br>
+				<br>
+
+				<input type="mail" placeholder="E-mail" style="border-width: 1px; border: solid;width: 100%;padding-bottom: 10px;padding-top: 10px;padding-left: 10px;border-radius: 8px;border-color: transparent;">
+				
+				<br>
+				<br>
+
+				<input type="text" placeholder="Subject" style="border-width: 1px; border: solid;width: 100%;padding-bottom: 10px;padding-top: 10px;padding-left: 10px;border-radius: 8px;border-color: transparent;">
+				
+				<br>
+				<br>
+				
+				<input type="text" placeholder="Message" style="border-width: 1px; border: solid;width: 100%;padding-bottom: 200px;padding-top: 5px;padding-left: 10px;border-radius: 8px;border-color: transparent;">
+
+				<br>
+				<br>
+
+				<input type="checkbox" name="checkbox" Sign up for newsletter?>
+				<label> Subscribe to newsletters </label>
+				<br>
+				<br>
+
+				<button style="padding: 10px; border-width: 2px; border-color: green;border-radius: 0px;background-color: transparent;color: white; "><strong>Send Message</strong></button>
+			</div>
+	    	<div class="card">
+	      		<h3>Follow Me</h3>
+	      		<p> You can also check out my latest (and old) projects on any of the social platforms below </p>
+	      		<button style="height: 30px">Instagram</button>
+	      		<button style="height: 30px">Facebook</button>
+	      		<a href="https://wa.me/c/2348105314744"><button style="height: 30px">WhatsApp</button></a>
+	      		<button style="height: 30px">LinkedIn</button>
+	      		<button style="height: 30px">Twitter</button>
+	    	</div>
+	  	</div>
+	</div>
+
+	<div class="footer">
+	  <p>Copyright @Turnr [2021]</p>
+	</div>
+
+</body>
+
+</html>
